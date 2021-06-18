@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dream Bike</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="frameSizeScript.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Proiect.html">Cycling helper</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/Bikes.html">Bikes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-current="page" onclick="lastSize()">Frame Size</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/Favorites.html">Favorites</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+        <div class="home-images">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Poze/img_5.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Poze/img_8.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Poze/img_6.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Poze/img_7.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="modal" id="exampleModal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Frame Size Calculator</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <input type="text" class="form-control mb-2" id="height" placeholder="Height" aria-label="Height" >
+                <input type="text" class="form-control mb-2" id="inseam" placeholder="Inseam" aria-label="Inseam" >
+                <img src="https://gblobscdn.gitbook.com/assets%2F-LTyyITzz8pFCSgdtyIW%2F-M6Z2F4Smp-DsZVJ7BMr%2F-M6Z310H2kt31Kd2aO-p%2FMountain-bike-size-guide-inseam-measurement.png?alt=media&token=bb28362f-9477-4ff2-8c22-a9f3d2cb182f" class="d-block w-100" alt="...">
+                <div id="sizeResult"></div>
+                <div id="lastSize"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="reset()">Close</button>
+                <button type="button" class="btn btn-primary" id="calculate" onclick="sizeCalculator()">Calculate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

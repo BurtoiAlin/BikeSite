@@ -1,0 +1,34 @@
+{
+    "bikes": [
+        {
+            "id": 1,
+            "name": "Specialized S-Works Epic HT",
+            "weight": "Greutate: 7,8kg",
+            "image": "https://cdn.bike24.net/i/mb/52/36/97/91321-000-s-works-874231.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Cannondale Scalpel Hi-Mod 1",
+            "weight": "Greutate: 9.76kg",
+            "image": "https://cdn.bike24.net/i/mb/34/a7/e6/scalpel-himod-carbon-1-01-835936.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Cube C:68X SLT",
+            "weight": "Greutate: 8,6kg",
+            "image": "https://www.bikexpert.ro/userfiles/3f36334d-27dd-49ca-9d2d-ba2ff682895f/products/11231915_product.jpg"
+        },
+        {
+            "id": 4,
+            "name": "CUBE AMS 100 C:68 SLT",
+            "weight": "Greutate: 9,9kg",
+            "image": "https://www.bikexpert.ro/userfiles/3f36334d-27dd-49ca-9d2d-ba2ff682895f/products/11233562_product.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Specialized Epic Pro",
+            "weight": "Greutate: 10,9kg",
+            "image": "https://www.bikexpert.ro/userfiles/3f36334d-27dd-49ca-9d2d-ba2ff682895f/products/11387829_product.jpg"
+        }
+    ]
+}
